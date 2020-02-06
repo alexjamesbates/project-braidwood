@@ -1,0 +1,59 @@
+{% extends "layout_unbranded.html" %}
+{% set serviceName %}
+
+{% endset%}
+{% block pageTitle %}
+  Convictions
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/volunteer/requirements">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+    <form class="form" action="/volunteer/privacy" method="post">
+
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Do you have any unspent convictions, cautions, reprimands or warnings?
+      </h1>
+    </legend>
+    <span id="changed-name-hint" class="govuk-hint">
+      A criminal conviction will only be taken into account when relevant. Declaring a conviction won't stop you from being considered.
+    </span>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          No
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+
+
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+  </form>
+  </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "layout_unbranded.html" %}
+{% set serviceName %}
+
+{% endset%}
+{% block pageTitle %}
+  Availability
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/volunteer/hopes">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+    <form class="form" action="/volunteer/requirements" method="post">
+
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="availability-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        When are you available?
+      </h1>
+    </legend>
+    <span id="availability-hint" class="govuk-hint">
+      Select all that apply.
+    </span>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="availability" name="availability" type="checkbox" value="mornings">
+        <label class="govuk-label govuk-checkboxes__label" for="availability">
+          Weekday mornings
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="availability-2" name="availability" type="checkbox" value="afternoons">
+        <label class="govuk-label govuk-checkboxes__label" for="availability-2">
+          Weekday afternoons
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="availability-3" name="availability" type="checkbox" value="evenings">
+        <label class="govuk-label govuk-checkboxes__label" for="availability-3">
+          Weekday evenings
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="availability-4" name="availability" type="checkbox" value="weekends">
+        <label class="govuk-label govuk-checkboxes__label" for="availability-4">
+          Weekends
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

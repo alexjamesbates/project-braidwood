@@ -1,0 +1,139 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Example of more than one question per page
+
+{% endblock %}
+{% block beforeContent %}
+  <a class="govuk-back-link" href="#">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Example of more than one question per page</h1>
+
+    <form class="form" action="#" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="admin-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-fieldset__heading">
+              What skills or experience do you have?
+            </h2>
+          </legend>
+          <span id="admin-hint" class="govuk-hint">
+            Select all that apply.
+          </span>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="admin" name="admin" type="checkbox" value="admin">
+                  <label class="govuk-label govuk-checkboxes__label" for="admin">
+                    Administrative or project work
+                  </label>
+                </div>
+                <div class="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="bsl" name="bsl" type="checkbox" value="bsl">
+                    <label class="govuk-label govuk-checkboxes__label" for="bsl">
+                      British sign language (BSL)
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="campaign" name="campaign" type="checkbox" value="campaign">
+                      <label class="govuk-label govuk-checkboxes__label" for="campaign">
+                        Campaigning
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="fundraising" name="fundraising" type="checkbox" value="fundraising">
+                        <label class="govuk-label govuk-checkboxes__label" for="fundraising">
+                          Fundraising
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="support" name="support" type="checkbox" value="support">
+                          <label class="govuk-label govuk-checkboxes__label" for="support">
+                            One-to-one support
+                          </label>
+                        </div>
+                <div class="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="care" name="care" type="checkbox" value="care">
+                    <label class="govuk-label govuk-checkboxes__label" for="care">
+                      Residential care
+                    </label>
+                  </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="deaf" name="deaf" type="checkbox" value="deaf">
+              <label class="govuk-label govuk-checkboxes__label" for="deaf">
+                Working with people who are d/Deaf, have hearing loss or tinnitus
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-fieldset__heading">
+              What do you want to gain?
+            </h2>
+          </legend>
+          <span id="waste-hint" class="govuk-hint">
+            Select all that apply.
+          </span>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="confidence" name="waste" type="checkbox" value="mines">
+            <label class="govuk-label govuk-checkboxes__label" for="confidence">
+              Confidence
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="understanding" name="understanding" type="checkbox" value="understanding">
+            <label class="govuk-label govuk-checkboxes__label" for="understanding">
+              A better understanding of hearing loss
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="help" name="help" type="checkbox" value="help">
+            <label class="govuk-label govuk-checkboxes__label" for="help">
+              Help others
+            </label>
+          </div>
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="people" name="people" type="checkbox" value="people">
+              <label class="govuk-label govuk-checkboxes__label" for="people">
+                Meet new people
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="share" name="share" type="checkbox" value="share">
+              <label class="govuk-label govuk-checkboxes__label" for="share">
+                Share my experience
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+      </div>
+
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,123 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Volunteer
+
+{% endblock %}
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Volunteer</h1>
+
+    <p class="govuk-body-l">There are lots of ways you can volunteer with us and make a difference.</p>
+
+</div>
+  <div class="govuk-grid-column-two-thirds">
+    <form action="/volunteer/opportunities" method="get" role="search" >
+    <div class="govuk-form-group">
+  <input class="govuk-input" id="location-search" name="location-search" type="search" placeholder="Enter town or postcode">
+</div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <button class="govuk-button" data-module="govuk-button" type="submit">
+    Search
+  </button>
+  </div>
+  </form>
+</div>
+</div>
+
+<div id="homepage" class="govuk-width-container">
+    <section>
+      <div class="govuk-grid-row">
+<div class="govuk-grid-column-one-third">
+<div class="nhsuk-promo">
+              <a class="nhsuk-promo__link-wrapper" href="#">
+
+
+           <img class="nhsuk-promo__img" src="/public/images/why-volunteer.png" alt="Why volunteer">
+
+                <div class="nhsuk-promo__content">
+                  <h2 class="nhsuk-promo__heading">Why volunteer with us</h2>
+                  <p class="nhsuk-promo__description">Help people affected by hearing loss.</p>
+
+
+                </div>
+              </a>
+            </div>
+
+            </div>
+            <div class="govuk-grid-column-one-third">
+            <div class="nhsuk-promo">
+                          <a class="nhsuk-promo__link-wrapper" href="#">
+
+
+                              <img class="nhsuk-promo__img" src="/public/images/ways-to-volunteer.png" alt="Ways to volunteer">
+
+                            <div class="nhsuk-promo__content">
+                              <h2 class="nhsuk-promo__heading">Ways to volunteer</h2>
+
+                                <p class="nhsuk-promo__description">Volunteer your way and get as much as you give.</p>
+
+                            </div>
+                          </a>
+                        </div>
+                        </div>
+                        <div class="govuk-grid-column-one-third">
+                        <div class="nhsuk-promo">
+                                      <a class="nhsuk-promo__link-wrapper" href="#">
+
+
+                                          <img class="nhsuk-promo__img" src="/public/images/meet-our-volunteers.png" alt="What it's like to volunteer">
+
+                                        <div class="nhsuk-promo__content">
+                                          <h2 class="nhsuk-promo__heading">What it's like to volunteer</h2>
+
+                                            <p class="nhsuk-promo__description">Find out what it's like to be a volunteer.</p>
+
+                                        </div>
+                                      </a>
+                                    </div>
+                                    </div>
+                                    </div>
+
+
+
+  </section>
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <h3 class="govuk-heading-m">Contact information</h3>
+  <dl class="govuk-summary-list govuk-summary-list--no-border">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Email
+      </dt>
+      <dd class="govuk-summary-list__value">
+        volunteering@hearingloss.org.uk
+      </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Phone
+      </dt>
+      <dd class="govuk-summary-list__value">
+        01273 840960
+      </dd>
+    </div>
+
+  </dl>
+</div>
+
+                                                                </div>
+    </div>
+
+
+
+{% endblock %}

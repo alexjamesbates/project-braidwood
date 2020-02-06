@@ -1,0 +1,77 @@
+{% extends "layout_unbranded.html" %}
+{% set serviceName %}
+
+{% endset%}
+{% block pageTitle %}
+  Hopes
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/volunteer/experience">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+    <form class="form" action="/volunteer/availability" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              What do you want to gain?
+            </h1>
+          </legend>
+          <span id="waste-hint" class="govuk-hint">
+            Select all that apply.
+          </span>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="confidence" name="waste" type="checkbox" value="mines">
+            <label class="govuk-label govuk-checkboxes__label" for="confidence">
+              Confidence
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="understanding" name="understanding" type="checkbox" value="understanding">
+            <label class="govuk-label govuk-checkboxes__label" for="understanding">
+              A better understanding of hearing loss
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="help" name="help" type="checkbox" value="help">
+            <label class="govuk-label govuk-checkboxes__label" for="help">
+              Help others
+            </label>
+          </div>
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="people" name="people" type="checkbox" value="people">
+              <label class="govuk-label govuk-checkboxes__label" for="people">
+                Meet new people
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="share" name="share" type="checkbox" value="share">
+              <label class="govuk-label govuk-checkboxes__label" for="share">
+                Share my experience
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

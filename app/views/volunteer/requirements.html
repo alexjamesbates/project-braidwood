@@ -1,0 +1,71 @@
+{% extends "layout_unbranded.html" %}
+{% set serviceName %}
+
+{% endset%}
+{% block pageTitle %}
+  Requirements
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/volunteer/availability">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+    <form class="form" action="/volunteer/convictions" method="post">
+
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="requirements-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Do you have any access or support requirements? (optional)
+      </h1>
+    </legend>
+    <span id="requirements-hint" class="govuk-hint">
+      Select all that apply.
+    </span>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="requirements" name="requirements" type="checkbox" value="bsl">
+        <label class="govuk-label govuk-checkboxes__label" for="requirements">
+          British sign language (BSL) interpreter
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="requirements-2" name="requirements" type="checkbox" value="loops">
+        <label class="govuk-label govuk-checkboxes__label" for="requirements-2">
+          Induction loops
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="requirements-3" name="requirements" type="checkbox" value="print">
+        <label class="govuk-label govuk-checkboxes__label" for="requirements-3">
+          Large print
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="requirements-4" name="requirements" type="checkbox" value="wheelchair">
+        <label class="govuk-label govuk-checkboxes__label" for="requirements-4">
+          Wheelchair access
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
+  </div>
+</div>
+
+
+
+{% endblock %}
