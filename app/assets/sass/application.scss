@@ -40,6 +40,7 @@ $govuk-assets-path: '/govuk/assets/';
 }
 .govuk-button {
   background-color: #3A3A3A;
+  box-shadow: 0 2px 0 #000000;
 // width: 100%;
 //  border-radius: 4px;
 
@@ -134,3 +135,14 @@ $govuk-assets-path: '/govuk/assets/';
   margin-bottom: 20px;
 
 }
+
+.govuk-summary-list__key, .govuk-summary-list__value {
+//word-wrap: normal;
+//overflow-wrap: normal;
+}
+
+
+@media (min-width: 40.0525em) and (max-width: 40.0625em) {
+.govuk-summary-list__key {
+//  display: block !important;
+}}

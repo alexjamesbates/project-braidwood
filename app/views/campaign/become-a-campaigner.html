@@ -1,0 +1,75 @@
+{% extends "layout_unbranded.html" %}
+{% set serviceName %}
+
+{% endset%}
+{% block pageTitle %}
+  Become a campaigner
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/campaign/subtitle-it">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Become a campaigner
+      </h1>
+
+      <p class="govuk-body">You:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>will need to give your details</li>
+        <li>will receive updates once a week</li>
+        <li>can opt out at any time</li>
+      </ul>
+
+      <form class="form" action="/campaign/confirmation" method="post">
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="full-name">
+      Full name
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="full-name" name="full-name" type="text" autocomplete="name" spellcheck="false">
+  </div>
+
+  <div class="govuk-form-group">
+  <label class="govuk-label" for="email">
+    Email address
+  </label>
+  <input class="govuk-input govuk-!-width-two-thirds" id="email" name="email" type="email" aria-describedby="email-hint" autocomplete="email" spellcheck="false">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="address-postcode">
+    Postcode
+  </label>
+  <input class="govuk-input govuk-!-width-one-third" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+</div>
+
+<div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="with-hint">
+      Why do you want to become a campaigner? (optional)
+    </label>
+    <textarea class="govuk-textarea govuk-js-character-count govuk-!-width-two-thirds" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+  </div>
+
+  <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+    You can enter up to 200 characters
+  </span>
+
+</div>
+
+
+    <button class="govuk-button" data-module="govuk-button">Send</button>
+
+      </form>
+
+
+
+
+
+
+{% endblock %}
