@@ -5,6 +5,14 @@
 
 {% endblock %}
 {% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Volunteer</li>
+  </ol>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -23,11 +31,12 @@
     <form action="/volunteer/opportunities" method="get" role="search" >
     <div class="govuk-grid-column-two-thirds">
       <div class="govuk-form-group">
-  <input class="govuk-input" id="location-search" name="location-search" type="search" placeholder="Enter town or postcode">
+        
+  <input class="govuk-input" id="location-search" name="location-search" type="search" placeholder="Enter a town, city or postcode">
 </div>
   </div>
   <div class="govuk-grid-column-one-third">
-    <button class="govuk-button" data-module="govuk-button" type="submit">
+    <button class="govuk-button search" data-module="govuk-button" type="submit">
     Search
   </button>
   </div>

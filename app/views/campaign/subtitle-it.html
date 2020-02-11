@@ -5,46 +5,110 @@
 {% endblock %}
 
 {% block beforeContent %}
-<a href="/campaign" class="govuk-back-link">Back</a>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/campaign">Campaign</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Subtitle it</li>
+  </ol>
+</div>
 {% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-
   <h1 class="govuk-heading-xl">
-    Improve subtitles on video content (Subtitle it!)
+    Subtitle it
   </h1>
+  <img class="nhsuk-promo__img" src="/public/images/image-placeholder.png" alt=""><br><br>
+
   <p class="govuk-body-l">
-    Join the campaign that aims to improve access to subtitles on video-on-demand content.
+    Join our campaign to make sure on-demand TV has subtitles and more signed programmes.
   </p>
+  <p class="govuk-body">Share your experiences, so broadcasters and policymakers understand what it’s like to be excluded from TV.</p>
 
 
-<a role="button" class="govuk-button" data-module="govuk-button" href="/campaign/become-a-campaigner">
-  Join the campaign</a>
-
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-<h2 class="govuk-heading-l">What the problem is</h2>
-
-<p class="govuk-body">Many programmes are unwatchable due to a lack of subtitles, poor quality subtitles or excessive background noise and music.</p>
-
-
-<h2 class="govuk-heading-l">How you can fix it</h2>
-
-<p class="govuk-body">Help convince parliament to change the law and give Ofcom new powers to legally enforce subtitles.</p>
-
-<h2 class="govuk-heading-l">Watch what impact poor subtitles have on people (2 minutes)</h2>
-
-<img class="nhsuk-promo__img" src="/public/images/why-volunteer.png" alt="Why volunteer">
-
-<br><p class="govuk-caption-m">Eddie can no longer enjoy his favourite programmes after a car accident.</p>
-
-
-</div>
-
-</div>
+<a role="button" class="govuk-button" data-module="govuk-button" href="#">
+  Share your story</a>
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
+<h2 class="govuk-heading-l">The problem</h2>
+
+<p class="govuk-body">Subtitles are available on most TV shows and films when broadcast on traditional channels, such as BBC 1 or ITV, but not when they’re shown on online video services such as iPlayer, Now TV or Netflix.</p>
+<p class="govuk-body">This is because when a show or film is moved online, the original broadcaster needs to provide a subtitle file for each device that the show will be viewed through – for example:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>set-top boxes, such as a Sky Box</li>
+  <li>computers, smartphones and tablets</li>
+  <li>games consoles, such as an XBox</li>
+</ul>
+<p class="govuk-body">Often, these files aren’t provided, meaning people who rely on subtitles to enjoy TV and film miss out. Four in 10 people now say that online video services are their main way of watching TV and film, but people who are Deaf or have hearing loss often don’t have this option.</p>
+
+
+<h2 class="govuk-heading-l">What we want to change</h2>
+
+<p class="govuk-body">We want the government to force online video services in the UK to provide a minimum level of subtitled TV shows and films.</p>
+<p class="govuk-body">Thanks to our campaigners, we changed the law in 2017 so that the government can regulate online video services and require them to have a minimum level of subtitled content. But they’ve still not put this law into action.</p>
+
+<h2 class="govuk-heading-l">How to support the campaign</h2>
+<ul class="govuk-list govuk-list--bullet">
+  <li>Are you affected by the lack of subtitles or signed content? <a href="#">Tell us about it</a>, so we can make sure that broadcasters know</li>
+  <li><a href="#">Join our Campaigns Network</a> for email updates on ways to support the campaign</li>
+  <li><a href="#">Contact broadcasters</a> to complain about subtitles or the lack of signed content. You’ll be helping broadcasters to improve the accessibility of their service</li>
+</ul>
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <h2 class="govuk-details__summary-text">
+      The campaign so far
+    </h2>
+  </summary>
+  <div class="govuk-details__text">
+    [Content to come. Bullet points, taken from existing content]
+  </div>
+</details>
+</div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-l">Our other campaigns</h2>
+      <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <div class="nhsuk-promo">
+                <a class="nhsuk-promo__link-wrapper" href="#">
+
+
+                  <img class="nhsuk-promo__img" src="/public/images/image-placeholder.png" alt="">
+
+
+                  <div class="nhsuk-promo__content">
+                    <h2 class="nhsuk-promo__heading">Working for change</h2>
+                    <p class="nhsuk-promo__description">Change attitudes in the workplace.</p>
+
+
+                  </div>
+                </a>
+              </div>
+                  </div>
+                  <div class="govuk-grid-column-one-half">
+                    <div class="nhsuk-promo">
+                            <a class="nhsuk-promo__link-wrapper" href="#">
+
+
+                              <img class="nhsuk-promo__img" src="/public/images/image-placeholder.png" alt="">
+
+                              <div class="nhsuk-promo__content">
+                                <h2 class="nhsuk-promo__heading">Regional campaigns</h2>
+                                <p class="nhsuk-promo__description">Help people affected by hearing loss.</p>
+
+
+                              </div>
+                            </a>
+                          </div>
+                              </div>
+</div>
 {% endblock %}
