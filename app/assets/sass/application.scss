@@ -128,7 +128,25 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 .govuk-panel--confirmation {
-  background: #000000;
+  background: #3A3A3A;
+  text-align: left;
+}
+
+.govuk-panel--confirmation {
+  .govuk-heading-m, .govuk-heading-l, .govuk-summary-list, .govuk-body, a.govuk-link {
+    color: #ffffff;
+  }
+}
+.govuk-panel--confirmation {
+  .govuk-button {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.govuk-button:hover {
+color: #ffffff;
+background-color: #000000;
+}
+
 }
 
 .govuk-phase-banner {
