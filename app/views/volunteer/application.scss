@@ -1,0 +1,274 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-header";
+@import "patterns/step-by-step-nav";
+@import "patterns/step-by-step-related";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+
+.govuk-tag {
+  background-color: #000000;
+}
+
+.home-promo__image {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.govuk-link:link, a:link, a.nhsuk-promo__link-wrapper:visited, .govuk-link:visited, a:visited {
+    color: #000000;
+}
+.govuk-header__container {
+  border-bottom: 10px solid #ffffff;
+}
+.govuk-footer__copyright-logo {
+  display: none;
+}
+.govuk-button {
+  background-color: #3A3A3A;
+  box-shadow: 0 2px 0 #000000;
+ //width: 33%;
+//  border-radius: 4px;
+
+}
+
+.govuk-button:hover {
+  background-color: #000000;
+}
+
+.app-masthead {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    background-color: #e9e9e9;
+}
+
+.govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
+    padding-top: 0px;
+}
+
+.govuk-accordion__section-button, .js-enabled .govuk-accordion__section-header, .govuk-accordion__open-all {
+  color: #000000 !important;
+}
+
+.govuk-table__header, .govuk-table__cell {
+  border-bottom-color: transparent !important;
+  margin-bottom: 0px;
+}
+
+.govuk-table {
+  margin-bottom: 0px;
+}
+
+  .nhsuk-promo-group__item .nhsuk-promo {
+      margin-bottom: 0;
+  }
+
+  .nhsuk-promo__link-wrapper {
+      background-color: #fff;
+      border: 1px solid #000000 !important;
+      box-shadow: 0 4px 0 0 #000000 !important;
+      display: block;
+      height: 100%;
+      position: relative;
+      text-decoration: none;
+      margin-bottom: 28px;
+  }
+
+  .nhsuk-promo:hover, .nhsuk-promo:focus  {
+    .nhsuk-promo__heading {
+    text-decoration: none !important;
+  }
+  }
+
+  .nhsuk-promo__img {
+//    border: 1px solid #000000;
+    display: block;
+    width: 100%;
+}
+
+.nhsuk-promo__content {
+    padding: 24px;
+}
+
+.nhsuk-promo__heading {
+    font-weight: 600;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    text-decoration: underline;
+
+}
+
+.nhsuk-promo__link-wrapper:focus {
+    background-color: #fff;
+    outline: 3px solid #ffdd00 !important;
+    box-shadow: 0 0 0 4px #ffb81c !important;
+}
+
+.nhsuk-promo__link-wrapper:focus {
+    .nhsuk-promo__heading {
+    text-decoration: none !important;
+  }
+}
+
+.govuk-panel--confirmation {
+  background: #3A3A3A;
+  text-align: left;
+}
+
+.govuk-panel--confirmation {
+  .govuk-heading-m, .govuk-heading-l, .govuk-summary-list, .govuk-body, a.govuk-link {
+    color: #ffffff;
+  }
+}
+.govuk-panel--confirmation {
+  .govuk-button {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.govuk-button:hover {
+color: #ffffff;
+background-color: #000000;
+}
+
+}
+
+.govuk-phase-banner {
+  margin-bottom: 20px;
+
+}
+
+.govuk-summary-list__key, .govuk-summary-list__value {
+//word-wrap: normal;
+//overflow-wrap: normal;
+}
+
+
+@media (min-width: 40.0525em) and (max-width: 40.0625em) {
+.govuk-summary-list__key {
+//  display: block !important;
+}}
+
+button.govuk-button.search {
+    width: 100%;
+}
+
+p.govuk-caption-m {
+      padding-top: 16px;
+//    line-height: 1.71429;
+//  padding: 16px;
+//    border: 1px solid #000000;
+//    box-shadow: 0 4px 0 0 #000000 !important;
+}
+
+
+
+img.nhsuk-promo__img.hero {
+  @include govuk-media-query ($from: desktop) {
+    width: 48% !important;
+    border-bottom: 0;
+    border-right: 1px solid #000000;
+  }
+}
+
+
+  a.nhsuk-promo__link-wrapper.hero {
+    @include govuk-media-query ($from: desktop) {
+      display: flex;
+  }}
+
+  .nhsuk-promo__content.hero {
+    @include govuk-media-query ($from: desktop) {
+      padding: 32px;
+  }}
+
+  .guide .part-navigation-container {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #b1b4b6;
+  }
+
+  .gem-c-contents-list {
+      position: relative;
+      margin: 0 0 20px 0;
+      z-index: 1;
+      background: #ffffff;
+      box-shadow: 0 20px 15px -10px #ffffff;
+  }
+
+  .gem-c-contents-list__title {
+    color: #0b0c0c;
+    font-family: "nta", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+.gem-c-contents-list__list, .gem-c-contents-list__nested-list {
+    color: #0b0c0c;
+    font-family: "nta", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.gem-c-contents-list__list-item--dashed {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.gem-c-contents-list__list-item {
+    padding-top: 10px;
+    line-height: 1.3;
+    list-style-type: none;
+}
+
+.gem-c-contents-list__list, .gem-c-contents-list__nested-list {
+    color: #0b0c0c;
+    font-family: "nta", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.gem-c-contents-list__list-item--dashed:before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    overflow: hidden;
+}
+
+.govuk-details__summary {
+  color: #000000;
+}
