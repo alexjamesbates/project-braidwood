@@ -110,7 +110,7 @@ $govuk-assets-path: '/govuk/assets/';
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 1.4;
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
     text-decoration: underline;
 
 }
@@ -219,7 +219,7 @@ img.nhsuk-promo__img.hero {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 1.5;
     margin: 0;
 }
@@ -229,7 +229,7 @@ img.nhsuk-promo__img.hero {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 1.1428571429;
     margin: 0;
     padding: 0;
@@ -254,7 +254,7 @@ img.nhsuk-promo__img.hero {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 1.1428571429;
     margin: 0;
     padding: 0;
