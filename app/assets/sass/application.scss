@@ -290,12 +290,24 @@ img.nhsuk-promo__img.hero {
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+ }
+ .embed-container iframe, .embed-container object, .embed-container embed {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+.youtube-marker:hover {
+  cursor: pointer;
+  background: rgba(126, 126, 126, 0.4);
+
 }
 
-.embed-container iframe, .embed-container object, .embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.youtube-marker-current {
+  background: rgba(126, 126, 126, 0.4);
 }

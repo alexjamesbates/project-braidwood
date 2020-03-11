@@ -1,7 +1,7 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-  Find a local hearing aids service
+  Hearing aid support near {{ data['location-search'] }}
 
 {% endblock %}
 {% block beforeContent %}
@@ -11,13 +11,13 @@
       <a class="govuk-breadcrumbs__link" href="/">Home</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/information-support">Information and support</a>
+      <a class="govuk-breadcrumbs__link" href="/information-support-1">Information and support</a>
     </li>
   <li class="govuk-breadcrumbs__list-item">
-    <a class="govuk-breadcrumbs__link" href="/information-support/support-services">Support services</a>
+    <a class="govuk-breadcrumbs__link" href="/information-support-1/support-services">Support services</a>
   </li>
   <li class="govuk-breadcrumbs__list-item">
-    <a class="govuk-breadcrumbs__link" href="/information-support/support-services/get-help-with-hearing-aids">Get help with hearing aids</a>
+    <a class="govuk-breadcrumbs__link" href="/information-support-1/support-services/get-help-with-hearing-aids">Get help with hearing aids</a>
   </li>
   <li class="govuk-breadcrumbs__list-item" aria-current="page">Find a local service</li>
   </ol>
@@ -29,9 +29,9 @@
 <div class="govuk-grid-row">
 <div class="govuk-grid-column-two-thirds">
 
-<h1 class="govuk-heading-xl">Find a local hearing aids service</h1>
+<h1 class="govuk-heading-xl">Hearing aid support near {{ data['location-search'] }} </h1>
 </div>
-    <form action="/information-support/support-services/get-help-with-hearing-aids/find-a-local-hearing-aids-service" method="get" role="search" >
+    <form action="/information-support-1/support-services/get-help-with-hearing-aids/find-a-local-hearing-aids-service" method="get" role="search" >
     <div class="govuk-grid-column-two-thirds">
       <div class="govuk-form-group">
   <input class="govuk-input" id="location-search" name="location-search" type="search" placeholder="Enter a town, city or postcode" value="{{ data['location-search'] }}">
@@ -53,7 +53,7 @@
     <p class="govuk-body">2.1 miles</p>
     <h3 class="govuk-heading-m">Hear to help - Shoreditch</h3>
     <div class="govuk-inset-text">
-Hearing aid support service provided by Action on Hearing Loss in partnership with xx Hospital Trust. </div>
+Partnership with Shoreditch Hospital Trust</div>
     <dl class="govuk-summary-list govuk-summary-list--no-border">
     <div class="govuk-summary-list__row">
       <dt class="govuk-summary-list__key">
@@ -114,6 +114,8 @@ Email  </dt>
       <div class="govuk-grid-column-two-thirds">
         <p class="govuk-body">2.3 miles</p>
         <h3 class="govuk-heading-m">Hear to help - Barton House</h3>
+        <div class="govuk-inset-text">
+    Partnership with Barton House Group Practice </div>
         <dl class="govuk-summary-list govuk-summary-list--no-border">
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
@@ -133,7 +135,40 @@ Email  </dt>
           </dd>
         </div>
         </dl>
+        <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Arrange a home visit
+    </span>
+    </summary>
+    <div class="govuk-details__text">
+    Contact us to arrange a home visit or to find out more.<br><br>
+    <dl class="govuk-summary-list govuk-summary-list--no-border">
 
+
+    <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Phone </dt>
+    <dd class="govuk-summary-list__value">
+    020 7033 8504
+    </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    <span style="text-decoration:underline">Relay UK</span></dt>
+    <dd class="govuk-summary-list__value">
+    18001 then 020 7033 8504
+    </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Email  </dt>
+    <dd class="govuk-summary-list__value">
+    <span style="text-decoration:underline">heartohelp@hearingloss.org.uk</span>
+    </dd>
+    </div>
+    </dl>  </div>
+    </details>
         </div>
         </div>
         <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -142,6 +177,9 @@ Email  </dt>
           <div class="govuk-grid-column-two-thirds">
             <p class="govuk-body">2.6 miles</p>
             <h3 class="govuk-heading-m">Hear to help - Neamen Practice</h3>
+            <div class="govuk-inset-text">
+    Partnership with Neamen Practice</div>
+
             <dl class="govuk-summary-list govuk-summary-list--no-border">
             <div class="govuk-summary-list__row">
               <dt class="govuk-summary-list__key">
@@ -161,6 +199,38 @@ Email  </dt>
               </dd>
             </div>
             </dl>
+            <details class="govuk-details" data-module="govuk-details">
+<summary class="govuk-details__summary">
+<span class="govuk-details__summary-text">
+Arrange a home visit
+</span>
+</summary>
+<div class="govuk-details__text">
+Contact us to arrange a home visit or to find out more.<br><br>
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Phone </dt>
+<dd class="govuk-summary-list__value">
+020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+<span style="text-decoration:underline">Relay UK</span></dt>
+<dd class="govuk-summary-list__value">
+18001 then 020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Email  </dt>
+<dd class="govuk-summary-list__value">
+<span style="text-decoration:underline">heartohelp@hearingloss.org.uk</span>
+</dd>
+</div>
+</dl>  </div>
+</details>
             </div>
             </div>
             <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -169,6 +239,8 @@ Email  </dt>
               <div class="govuk-grid-column-two-thirds">
                 <p class="govuk-body">3.7 miles</p>
                 <h3 class="govuk-heading-m">Hear to help - Stamford Hill</h3>
+                <div class="govuk-inset-text">
+    Partnership with Hackney care</div>
                 <dl class="govuk-summary-list govuk-summary-list--no-border">
                 <div class="govuk-summary-list__row">
                   <dt class="govuk-summary-list__key">
@@ -186,11 +258,43 @@ Email  </dt>
                     When
                   </dt>
                   <dd class="govuk-summary-list__value">
-                    3rd Tuesday of the month from 10:30am to 12:30pm<br>No appointment needed
+                    3rd Tuesday of the month from 10.30am to 12.30pm<br>No appointment needed
 
                   </dd>
                 </div>
                 </dl>
+                <details class="govuk-details" data-module="govuk-details">
+<summary class="govuk-details__summary">
+<span class="govuk-details__summary-text">
+Arrange a home visit
+</span>
+</summary>
+<div class="govuk-details__text">
+Contact us to arrange a home visit or to find out more.<br><br>
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Phone </dt>
+<dd class="govuk-summary-list__value">
+020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+<span style="text-decoration:underline">Relay UK</span></dt>
+<dd class="govuk-summary-list__value">
+18001 then 020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Email  </dt>
+<dd class="govuk-summary-list__value">
+<span style="text-decoration:underline">heartohelp@hearingloss.org.uk</span>
+</dd>
+</div>
+</dl>  </div>
+</details>
                 </div>
                 </div>
                 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -199,6 +303,8 @@ Email  </dt>
                   <div class="govuk-grid-column-two-thirds">
                     <p class="govuk-body">3.9 miles</p>
                     <h3 class="govuk-heading-m">Hear to help - Homerton</h3>
+                    <div class="govuk-inset-text">
+    Partnership with Homerton Hospital </div>
                     <dl class="govuk-summary-list govuk-summary-list--no-border">
                     <div class="govuk-summary-list__row">
                       <dt class="govuk-summary-list__key">
@@ -221,6 +327,38 @@ E9 6SR<br><a href="#" class="govuk-link">Get directions</a>
                       </dd>
                     </div>
                     </dl>
+                    <details class="govuk-details" data-module="govuk-details">
+<summary class="govuk-details__summary">
+<span class="govuk-details__summary-text">
+  Arrange a home visit
+</span>
+</summary>
+<div class="govuk-details__text">
+Contact us to arrange a home visit or to find out more.<br><br>
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Phone </dt>
+<dd class="govuk-summary-list__value">
+020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+<span style="text-decoration:underline">Relay UK</span></dt>
+<dd class="govuk-summary-list__value">
+18001 then 020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Email  </dt>
+<dd class="govuk-summary-list__value">
+<span style="text-decoration:underline">heartohelp@hearingloss.org.uk</span>
+</dd>
+</div>
+</dl>  </div>
+</details>
                     </div>
                     </div>
                     <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -229,6 +367,8 @@ E9 6SR<br><a href="#" class="govuk-link">Get directions</a>
                       <div class="govuk-grid-column-two-thirds">
                         <p class="govuk-body">6.7 miles</p>
                         <h3 class="govuk-heading-m">Hear to help - Finchley</h3>
+                        <div class="govuk-inset-text">
+    Partnership with Jewish Deaf Association</div>
                         <dl class="govuk-summary-list govuk-summary-list--no-border">
                         <div class="govuk-summary-list__row">
                           <dt class="govuk-summary-list__key">
@@ -252,6 +392,38 @@ N12 8RP<br><a href="#" class="govuk-link">Get directions</a>
                           </dd>
                         </div>
                         </dl>
+                        <details class="govuk-details" data-module="govuk-details">
+<summary class="govuk-details__summary">
+<span class="govuk-details__summary-text">
+  Arrange a home visit
+</span>
+</summary>
+<div class="govuk-details__text">
+Contact us to arrange a home visit or to find out more.<br><br>
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Phone </dt>
+<dd class="govuk-summary-list__value">
+020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+<span style="text-decoration:underline">Relay UK</span></dt>
+<dd class="govuk-summary-list__value">
+18001 then 020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Email  </dt>
+<dd class="govuk-summary-list__value">
+<span style="text-decoration:underline">heartohelp@hearingloss.org.uk</span>
+</dd>
+</div>
+</dl>  </div>
+</details>
                         </div>
                         </div>
                         <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -261,6 +433,9 @@ N12 8RP<br><a href="#" class="govuk-link">Get directions</a>
                             <p class="govuk-body">8.7 miles</p>
                             <h3 class="govuk-heading-m">Hear to help - Battersea
 </h3>
+<div class="govuk-inset-text">
+    Partnership with Begg Practice St John's Hill Surgery
+</div>
                             <dl class="govuk-summary-list govuk-summary-list--no-border">
                             <div class="govuk-summary-list__row">
                               <dt class="govuk-summary-list__key">
@@ -279,12 +454,44 @@ SW11 1SW<br><a href="#" class="govuk-link">Get directions</a>
                                 When
                               </dt>
                               <dd class="govuk-summary-list__value">
-                                2nd Wednesday of the month from 10am to 12:30pm
+                                2nd Wednesday of the month from 10am to 12.30pm
 <br>No appointment needed
 
                               </dd>
                             </div>
                             </dl>
+                            <details class="govuk-details" data-module="govuk-details">
+<summary class="govuk-details__summary">
+<span class="govuk-details__summary-text">
+ Arrange a home visit
+</span>
+</summary>
+<div class="govuk-details__text">
+Contact us to arrange a home visit or to find out more.<br><br>
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Phone </dt>
+<dd class="govuk-summary-list__value">
+020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+<span style="text-decoration:underline">Relay UK</span></dt>
+<dd class="govuk-summary-list__value">
+18001 then 020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Email  </dt>
+<dd class="govuk-summary-list__value">
+<span style="text-decoration:underline">heartohelp@hearingloss.org.uk</span>
+</dd>
+</div>
+</dl>  </div>
+</details>
                             </div>
                             </div>
                             <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -294,6 +501,9 @@ SW11 1SW<br><a href="#" class="govuk-link">Get directions</a>
                                 <p class="govuk-body">8.8 miles</p>
                                 <h3 class="govuk-heading-m">Hear to help - St Michael’s Day Centre
 </h3>
+<div class="govuk-inset-text">
+    Partnership with St Michael's Care
+</div>
                                 <dl class="govuk-summary-list govuk-summary-list--no-border">
                                 <div class="govuk-summary-list__row">
                                   <dt class="govuk-summary-list__key">
@@ -311,12 +521,44 @@ SW11 1SW<br><a href="#" class="govuk-link">Get directions</a>
                                     When
                                   </dt>
                                   <dd class="govuk-summary-list__value">
-                                    Last Tuesday of the month from 10:30am to 12:30pm
+                                    Last Tuesday of the month from 10.30am to 12.30pm
 <br>No appointment needed
 
                                   </dd>
                                 </div>
                                 </dl>
+                                <details class="govuk-details" data-module="govuk-details">
+<summary class="govuk-details__summary">
+<span class="govuk-details__summary-text">
+ Arrange a home visit
+</span>
+</summary>
+<div class="govuk-details__text">
+Contact us to arrange a home visit or to find out more.<br><br>
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Phone </dt>
+<dd class="govuk-summary-list__value">
+020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+<span style="text-decoration:underline">Relay UK</span></dt>
+<dd class="govuk-summary-list__value">
+18001 then 020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Email  </dt>
+<dd class="govuk-summary-list__value">
+<span style="text-decoration:underline">heartohelp@hearingloss.org.uk</span>
+</dd>
+</div>
+</dl>  </div>
+</details>
                                 </div>
                                 </div>
                                 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -326,6 +568,10 @@ SW11 1SW<br><a href="#" class="govuk-link">Get directions</a>
                                     <p class="govuk-body">9 miles</p>
                                     <h3 class="govuk-heading-m">Hear to help - Old York Road
 </h3>
+<div class="govuk-inset-text">
+    Partnership with Wandsworth Medical Centre
+</div>
+
                                     <dl class="govuk-summary-list govuk-summary-list--no-border">
                                     <div class="govuk-summary-list__row">
                                       <dt class="govuk-summary-list__key">
@@ -348,6 +594,38 @@ SW18 1TQ<br><a href="#" class="govuk-link">Get directions</a>
                                       </dd>
                                     </div>
                                     </dl>
+                                    <details class="govuk-details" data-module="govuk-details">
+<summary class="govuk-details__summary">
+<span class="govuk-details__summary-text">
+  Arrange a home visit
+</span>
+</summary>
+<div class="govuk-details__text">
+Contact us to arrange a home visit or to find out more.<br><br>
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Phone </dt>
+<dd class="govuk-summary-list__value">
+020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+<span style="text-decoration:underline">Relay UK</span></dt>
+<dd class="govuk-summary-list__value">
+18001 then 020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Email  </dt>
+<dd class="govuk-summary-list__value">
+<span style="text-decoration:underline">heartohelp@hearingloss.org.uk</span>
+</dd>
+</div>
+</dl>  </div>
+</details>
                                     </div>
                                     </div>
                                     <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -357,6 +635,10 @@ SW18 1TQ<br><a href="#" class="govuk-link">Get directions</a>
                                         <p class="govuk-body">10.1 miles</p>
                                         <h3 class="govuk-heading-m">Hear to help - Streatham
 </h3>
+<div class="govuk-inset-text">
+    Partnership with Streatham High Practice
+</div>
+
                                         <dl class="govuk-summary-list govuk-summary-list--no-border">
                                         <div class="govuk-summary-list__row">
                                           <dt class="govuk-summary-list__key">
@@ -380,6 +662,38 @@ SW16 6SJ<br><a href="#" class="govuk-link">Get directions</a>
                                           </dd>
                                         </div>
                                         </dl>
+                                        <details class="govuk-details" data-module="govuk-details">
+<summary class="govuk-details__summary">
+<span class="govuk-details__summary-text">
+  Arrange a home visit
+</span>
+</summary>
+<div class="govuk-details__text">
+Contact us to arrange a home visit or to find out more.<br><br>
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Phone </dt>
+<dd class="govuk-summary-list__value">
+020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+<span style="text-decoration:underline">Relay UK</span></dt>
+<dd class="govuk-summary-list__value">
+18001 then 020 7033 8504
+</dd>
+</div>
+<div class="govuk-summary-list__row">
+<dt class="govuk-summary-list__key">
+Email  </dt>
+<dd class="govuk-summary-list__value">
+<span style="text-decoration:underline">heartohelp@hearingloss.org.uk</span>
+</dd>
+</div>
+</dl>  </div>
+</details>
                                         </div>
                                         </div>
 
@@ -388,47 +702,7 @@ SW16 6SJ<br><a href="#" class="govuk-link">Get directions</a>
   <p class="govuk-body tab"><strong>Is this page useful?</strong> &nbsp;&nbsp;  &nbsp;&nbsp;  <a href="#">Yes</a> &nbsp;&nbsp; <a href="#">No<a></p>
   <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-m">Contact our helpline</h2>
-    <p class="govuk-body">We provide free, confidential information and support.</p>
 
-  <dl class="govuk-summary-list govuk-summary-list--no-border">
-  <div class="govuk-summary-list__row">
-  <dt class="govuk-summary-list__key">
-  Chat
-  </dt>
-  <dd class="govuk-summary-list__value">
-  <span style="text-decoration:underline">Chat to us online</span>  </dd>
-  </div>
-  <div class="govuk-summary-list__row">
-  <dt class="govuk-summary-list__key">
-  Email  </dt>
-  <dd class="govuk-summary-list__value">
-  <span style="text-decoration:underline">helpline@hearingloss.org.uk</span>
-  </dd>
-  </div>
-  <div class="govuk-summary-list__row">
-  <dt class="govuk-summary-list__key">
-  Call </dt>
-  <dd class="govuk-summary-list__value">
-  0808 808 0123
-  </dd>
-  </div>
-  <div class="govuk-summary-list__row">
-  <dt class="govuk-summary-list__key">
-  <span style="text-decoration:underline">Relay UK</span></dt>
-  <dd class="govuk-summary-list__value">
-  18001 then 0808 0123
-  </dd>
-  </div>
-  </dl>
-        </div>
-
-
-
-</div>
-</div>
 
 
 
