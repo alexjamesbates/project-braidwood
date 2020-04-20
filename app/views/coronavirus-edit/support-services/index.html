@@ -1,0 +1,149 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Local support services
+
+{% endblock %}
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Information and support</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Local support services</li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Local support services</h1>
+
+    <p class="govuk-body-l">The coronavirus (COVID-19) outbreak means we’re not providing face-to-face support in person right now, but we’re still here to support you over the phone, through video calls or by email.</p>
+
+    <p class="govuk-body">Our local services can give you information and support to help you:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>manage your hearing aids</li>
+  <li>manage tinnitus or hearing loss, including the challenges that staying at home brings</li>
+  <li>find useful products for hearing loss or tinnitus</li>
+  <li>help to find or stay in work (Scotland, Northern Ireland and Wales only)</li>
+  <li>find other services and organisations that can support you.</li>
+
+</ul>
+</div>
+</div>
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+<h2 class="govuk-heading-l">Find support near you</h2>
+
+<div class="govuk-grid-row">
+
+    <form action="/coronavirus-edit/support-services/find-a-local-service" method="get" role="search">
+
+      <div class="govuk-grid-column-one-third">
+        <div class="govuk-form-group">
+        <label class="govuk-label" for="filter">
+          What you need help with
+        </label>
+        <select class="govuk-select" id="sort" name="filter">
+          <option value="Everything" selected>Everything</option>
+          <option value="Hearing aids">Hearing aids</option>
+          <option value="Hearing loss">Hearing loss</option>
+          <option value="Social">Social/ Befriending</option>
+          <option value="Social">Tinnitus</option>
+          <option value="Products">Products and equipment</option>
+          <option value="Work">Work</option>
+          <option value="Benefits">Benefits</option>
+        </select>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="location-search">
+          Location
+        </label>
+  <input class="govuk-input" id="location-search" name="location-search" type="search" placeholder="Enter a town, city or postcode">
+</div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <label class="govuk-label" for="button">
+    <br>
+    </label>
+    <button class="govuk-button search" data-module="govuk-button" type="submit">
+    Search
+  </button>
+  </div>
+
+  </form>
+
+</div>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-m">Get help with another issue</h2>
+    <p class="govuk-body"><a href="#" class="govuk-link">Browse our online information</a> or contact our Information Line:</p>
+
+  <dl class="govuk-summary-list govuk-summary-list--no-border">
+  <div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+  Chat
+  </dt>
+  <dd class="govuk-summary-list__value">
+  <span style="text-decoration:underline">Chat to us online</span>  </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+  Email  </dt>
+  <dd class="govuk-summary-list__value">
+  <span style="text-decoration:underline">information@hearingloss.org.uk</span>
+  </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+  Call </dt>
+  <dd class="govuk-summary-list__value">
+  0808 808 0123
+  </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+  <span style="text-decoration:underline">Relay UK</span></dt>
+  <dd class="govuk-summary-list__value">
+  18001 then 0808 0123
+  </dd>
+  </div>
+  </dl>
+        </div>
+
+
+
+</div>
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<p class="govuk-body tab"><strong>Is this page useful?</strong> &nbsp;&nbsp;  &nbsp;&nbsp;  <a href="#">Yes</a> &nbsp;&nbsp; <a href="#">No<a></p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

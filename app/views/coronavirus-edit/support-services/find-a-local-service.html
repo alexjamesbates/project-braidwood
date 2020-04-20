@@ -1,0 +1,196 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Support near
+
+{% endblock %}
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Information and support</a>
+    </li>
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="#">Support services</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item" aria-current="page">Find support near you</li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+
+<h1 class="govuk-heading-xl">Support near {{ data['location-search'] }} </h1>
+
+
+<div class="govuk-grid-row">
+
+    <form action="/coronavirus-edit/support-services/find-a-local-service" method="get" role="search">
+
+      <div class="govuk-grid-column-one-third">
+        <div class="govuk-form-group">
+        <label class="govuk-label" for="filter">
+          What you need help with
+        </label>
+        <select class="govuk-select" id="sort" name="filter">
+          <option value="Everything" selected>Everything</option>
+          <option value="Hearing aids">Hearing aids</option>
+          <option value="Hearing loss">Hearing loss</option>
+          <option value="Social">Social/ Befriending</option>
+          <option value="Social">Tinnitus</option>
+          <option value="Products">Products and equipment</option>
+          <option value="Work">Work</option>
+          <option value="Benefits">Benefits</option>
+        </select>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="location-search">
+          Location
+        </label>
+  <input class="govuk-input" id="location-search" name="location-search" type="search" placeholder="Enter a town, city or postcode" value="{{ data['location-search'] }}">
+</div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <label class="govuk-label" for="button">
+    <br>
+    </label>
+    <button class="govuk-button search" data-module="govuk-button" type="submit">
+    Search
+  </button>
+  </div>
+
+  </form>
+
+</div>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+</div>
+</div>
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    <h3 class="govuk-heading-m">Hear to help - Hackney</h3>
+    <p class="govuk-body">Action on Hearing Loss service for NHS hearing aid users.</p>
+    <p class="govuk-body">Can help with:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>posting batteries</li>
+  <li>remote troubleshooting</li>
+  <li>befriending</li>
+</ul>
+    <dl class="govuk-summary-list govuk-summary-list--no-border">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Phone
+      </dt>
+      <dd class="govuk-summary-list__value">
+      07551 063 742
+      </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Email
+      </dt>
+      <dd class="govuk-summary-list__value">
+        <span style="text-decoration:underline">sharon.james@hearingloss.org.uk</span>
+      </dd>
+    </div>
+    </dl>
+    </div>
+    </div>
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    <h3 class="govuk-heading-m">Audiology at University Hospital Lewisham</h3>
+    <p class="govuk-body">Audiology services for existing patients at University Hospital Lewisham.</p>
+    <p class="govuk-body">Can help with:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>posting batteries</li>
+  <li>emergency repairs</li>
+</ul>
+    <dl class="govuk-summary-list govuk-summary-list--no-border">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Phone
+      </dt>
+      <dd class="govuk-summary-list__value">
+      0208 333 3000 ext 8132
+      </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Website
+      </dt>
+      <dd class="govuk-summary-list__value">
+        <span style="text-decoration:underline">https://www.lewishamandgreenwich.nhs.uk/audiology/</span>
+      </dd>
+    </div>
+    </dl>
+    </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds">
+        <h3 class="govuk-heading-m">deafPLUS Tower Hamlets</h3>
+        <p class="govuk-body">Advice for Deaf people and people with hearing loss who live in Tower Hamlets</p>
+        <p class="govuk-body">Can help with:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>emotional support</li>
+      <li>local information</li>
+      <li>advice in BSL</li>
+    </ul>
+        <dl class="govuk-summary-list govuk-summary-list--no-border">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Phone
+          </dt>
+          <dd class="govuk-summary-list__value">
+          07745 708 878 (text only)
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Email
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <span style="text-decoration:underline">alysha.begum@deafplus.org</span>
+          </dd>
+        </div>
+        </dl>
+        </div>
+        </div>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <p class="govuk-body tab"><strong>Is this page useful?</strong> &nbsp;&nbsp;  &nbsp;&nbsp;  <a href="#">Yes</a> &nbsp;&nbsp; <a href="#">No<a></p>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<hr class="govuk-section-break govuk-section-break--l">
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
